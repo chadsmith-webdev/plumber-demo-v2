@@ -21,6 +21,11 @@
       "sourceType": "github",
       "computedHash": "081e388a6bd35c8e11a7b08de47fea59e64fc5422bf1bb898f2d94175ab0eda3"
     },
+    "schema-markup": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "6319ded25235292939050de1c51a98c6633d79f793396506eda2fa8265343758"
+    },
     "seo-content-writer": {
       "source": "aaron-he-zhu/seo-geo-claude-skills",
       "sourceType": "github",
@@ -35,6 +40,11 @@
       "source": "wondelai/skills",
       "sourceType": "github",
       "computedHash": "97e1fe5e886c49a5fd7ca5776071b0fca82878976a440945abcc8d8cd4f3b276"
+    },
+    "superpowers": {
+      "source": "founderjourney/claude-skills",
+      "sourceType": "github",
+      "computedHash": "5732c6239dae04ef5e36d22713f338552df717f1cd1d677a9561ec967e6851eb"
     }
   }
 }
