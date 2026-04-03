@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "skills": {
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "geo-content-optimizer": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "sourceType": "github",
+      "computedHash": "924d32f867ca0b615f58bca730e0dad562494d226622cb65bdf17e2c3f5615d5"
+    },
+    "landing-page-copywriter": {
+      "source": "onewave-ai/claude-skills",
+      "sourceType": "github",
+      "computedHash": "f7c7ceb8d99be73eb3e84c6281f1cd56121342f36c94b1d5d2835e4273598ab1"
+    },
+    "landing-page-design": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "081e388a6bd35c8e11a7b08de47fea59e64fc5422bf1bb898f2d94175ab0eda3"
+    },
+    "seo-content-writer": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "sourceType": "github",
+      "computedHash": "be1172a44a549939aa2d0ec19996095b9ddd1a1117c15df1e3790ecee81321ff"
+    },
+    "seo-sitemap": {
+      "source": "agricidaniel/claude-seo",
+      "sourceType": "github",
+      "computedHash": "c8f58c08ef6512da799a2cb1cbae78e32b6bbf351b9cff8e762333c286ea6003"
+    },
+    "storybrand-messaging": {
+      "source": "wondelai/skills",
+      "sourceType": "github",
+      "computedHash": "97e1fe5e886c49a5fd7ca5776071b0fca82878976a440945abcc8d8cd4f3b276"
+    }
+  }
+}
