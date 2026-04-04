@@ -6,6 +6,11 @@
       "sourceType": "github",
       "computedHash": "2370ebe70b19e3a60948772624c904d2308add52a403c4dceb84cf44708c6d3f"
     },
+    "ai-image-generation": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "e45c0ee94791e67e355130109fd827bd8b4bd0fb1d6b2ff8f782eb566d435174"
+    },
     "framer-motion": {
       "source": "mindrally/skills",
       "sourceType": "github",
