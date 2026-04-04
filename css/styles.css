@@ -342,6 +342,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 8px;
 }
 .trust-bar__item img {
@@ -397,6 +398,9 @@ a:hover {
   text-align: center;
   padding: 20px 0;
   font-weight: 600;
+}
+.section-stakes p {
+  margin: 0 auto;
 }
 
 /* ==============================
