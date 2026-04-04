@@ -70,6 +70,9 @@ p {
   margin-bottom: 1rem;
   max-width: 65ch;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 
 a {
   color: var(--accent);
@@ -207,12 +210,13 @@ a:hover {
 }
 .hero__eyebrow {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(200, 146, 58, 0.15);
   color: var(--accent);
+  border: 1px solid rgba(200, 146, 58, 0.4);
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
   animation: fadeInUp 0.5s 0.2s ease-out backwards;
 }
@@ -239,7 +243,7 @@ a:hover {
 .hero__availability {
   margin-top: 12px;
   font-size: 0.875rem;
-  color: var(--color-text-muted, #6b7280);
+  color: rgba(255, 255, 255, 0.75);
   animation: fadeInUp 0.5s 1s ease-out backwards;
 }
 .hero__credential-ring {
@@ -401,6 +405,9 @@ a:hover {
 .section {
   padding: 80px 0;
 }
+.section--sm {
+  padding: 50px 0;
+}
 .section--inverted {
   background-color: var(--primary);
   color: var(--text-inverted);
@@ -415,6 +422,9 @@ a:hover {
 }
 .section-header h2 {
   margin-bottom: 10px;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-header p {
   margin: 0 auto;
@@ -827,6 +837,29 @@ a:hover {
 }
 
 /* ==============================
+   GALLERY PLACEHOLDERS
+   ============================== */
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.gallery-placeholder svg {
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+}
+
+/* ==============================
    ANIMATIONS
    ============================== */
 @keyframes fadeIn {
@@ -881,9 +914,33 @@ a:hover {
   transform: translateY(0);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* ==============================
    RESPONSIVE — Mobile
    ============================== */
+@media (max-width: 480px) {
+  .trust-bar-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 767px) {
   .main-nav,
   .header-contact .btn {
@@ -957,6 +1014,10 @@ a:hover {
   .trust-bar-container {
     grid-template-columns: repeat(4, 1fr);
   }
+  /* Reset single-col override at tablet+ */
+  .trust-bar-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1013,6 +1074,49 @@ a:hover {
   }
   .footer-grid {
     grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* ==============================
+   STICKY MOBILE CTA
+   ============================== */
+.sticky-mobile-cta {
+  display: none;
+}
+@media (max-width: 767px) {
+  .sticky-mobile-cta {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background-color: var(--primary-dark);
+    border-top: 2px solid var(--accent);
+    padding: 12px 16px;
+    gap: 10px;
+    align-items: center;
+  }
+  .sticky-mobile-cta a {
+    flex: 1;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .sticky-mobile-cta .scta-call {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+  }
+  .sticky-mobile-cta .scta-book {
+    background-color: transparent;
+    color: var(--bg-alt);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  /* Offset footer from sticky bar */
+  .site-footer {
+    padding-bottom: calc(60px + 20px);
   }
 }
 
