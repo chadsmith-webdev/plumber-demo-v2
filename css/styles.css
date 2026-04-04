@@ -1162,9 +1162,9 @@ a:hover {
   color: var(--primary);
 }
 .success-contrast {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .success-before,
 .success-after {
