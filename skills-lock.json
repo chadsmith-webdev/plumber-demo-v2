@@ -21,6 +21,11 @@
       "sourceType": "github",
       "computedHash": "081e388a6bd35c8e11a7b08de47fea59e64fc5422bf1bb898f2d94175ab0eda3"
     },
+    "marketing-psychology": {
+      "source": "borghei/claude-skills",
+      "sourceType": "github",
+      "computedHash": "af3884d295b03ab4bdce99b024dbd3d71d4dd982f5824d1485e896d7be48f862"
+    },
     "schema-markup": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
