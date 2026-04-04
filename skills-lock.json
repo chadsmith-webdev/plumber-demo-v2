@@ -1,6 +1,21 @@
 {
   "version": 1,
   "skills": {
+    "Framer Expert": {
+      "source": "frankxai/claude-skills-library",
+      "sourceType": "github",
+      "computedHash": "2370ebe70b19e3a60948772624c904d2308add52a403c4dceb84cf44708c6d3f"
+    },
+    "framer-motion": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "computedHash": "39a33b58952788812d305f7b676b86ee800d3d5be9752e10392435d7fae73d8a"
+    },
+    "framer-motion-animator": {
+      "source": "patricio0312rev/skills",
+      "sourceType": "github",
+      "computedHash": "d0137ba04049bf8926bc80f6a5e2b82d94b5633b6445a85dbfb26ab4f1b104c6"
+    },
     "frontend-design": {
       "source": "anthropics/skills",
       "sourceType": "github",
@@ -40,6 +55,16 @@
       "source": "agricidaniel/claude-seo",
       "sourceType": "github",
       "computedHash": "c8f58c08ef6512da799a2cb1cbae78e32b6bbf351b9cff8e762333c286ea6003"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "b122f4d1e91aa1d83027e050b5b37c3156203ee85458d7b1360bc48167c9e02a"
+    },
+    "stitch-design": {
+      "source": "google-labs-code/stitch-skills",
+      "sourceType": "github",
+      "computedHash": "6df709345652460b4d4fdf214476a20c75d76a2ae011a958a51de2c88e6d86d1"
     },
     "storybrand-messaging": {
       "source": "wondelai/skills",
