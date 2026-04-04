@@ -236,6 +236,12 @@ a:hover {
   flex-wrap: wrap;
   animation: fadeInUp 0.5s 0.8s ease-out backwards;
 }
+.hero__availability {
+  margin-top: 12px;
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #6b7280);
+  animation: fadeInUp 0.5s 1s ease-out backwards;
+}
 .hero__credential-ring {
   display: none;
   position: relative;
@@ -339,6 +345,43 @@ a:hover {
   height: 24px;
   filter: invert(62%) sepia(58%) saturate(434%) hue-rotate(359deg)
     brightness(89%) contrast(86%);
+}
+
+/* ==============================
+   GUARANTEE
+   ============================== */
+.section-guarantee {
+  background-color: var(--bg-alt);
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.guarantee-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 28px 32px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.guarantee-banner__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.guarantee-banner__body h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+.guarantee-banner__body p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted, #4b5563);
+  line-height: 1.6;
 }
 
 /* ==============================
@@ -526,6 +569,16 @@ a:hover {
   font-family: var(--font-body);
   font-weight: 600;
   margin-bottom: 10px;
+}
+.service-card__stat {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-dark, #b45309);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
 }
 .services-link {
   text-align: center;
