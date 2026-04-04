@@ -190,6 +190,30 @@
                   "@type": "Answer",
                   "text": "Yes. We provide clear, flat-rate pricing before any work begins. You receive a detailed quote before we start, and the price you approve is the price you pay — no hidden fees or surprise charges."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "How quickly can I get plumbing service in Fayetteville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For most standard service calls, we offer same-day availability in Fayetteville and nearby Northwest Arkansas communities. Emergency plumbing support is available 24/7."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens after I schedule service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "After booking, our team confirms your appointment window, dispatches a licensed technician, and provides a clear diagnosis with upfront pricing before work begins."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do your repairs and installations include a warranty?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Covered repairs and installations are backed by our workmanship commitment and 100% satisfaction guarantee. If there is an issue, we return and make it right."
+                }
               }
             ]
           }
@@ -197,7 +221,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="page-about">
     <!-- ============================== HEADER ============================== -->
     <header id="site-header">
       <div class="container header-container">
@@ -205,7 +229,9 @@
           <img
             src="https://unpkg.com/heroicons@2.1.3/24/outline/wrench-screwdriver.svg"
             class="logo__icon"
-            alt="Ozark Plumbing Co. logo"
+            alt=""
+            width="24"
+            height="24"
           />
           <span>OZARK PLUMBING CO.</span>
         </a>
@@ -242,27 +268,59 @@
     </nav>
 
     <main>
-      <section
-        class="section-hero"
-        style="padding-top: 40px; padding-bottom: 40px"
-      >
-        <div class="container">
-          <h1 class="hero__headline" style="text-align: center">
-            About Ozark Plumbing Co.
-          </h1>
-          <p
-            class="hero__subheadline"
-            style="text-align: center; max-width: 60ch; margin: 20px auto 0"
-          >
-            Your neighbors in Fayetteville, AR, committed to honest work and
-            fair prices since 2012.
-          </p>
+      <section class="section-hero section-hero--about">
+        <div class="container hero-container hero-container--about">
+          <div class="hero__content hero__content--about">
+            <p class="hero__eyebrow">Licensed, bonded, and local</p>
+            <h1 class="hero__headline">
+              Fayetteville's Trusted Plumber Since 2012
+            </h1>
+            <p class="hero__subheadline">
+              We help homeowners fix plumbing problems fast, avoid costly water
+              damage, and get honest answers without sales pressure.
+            </p>
+            <p class="hero__subheadline hero__subheadline--secondary">
+              Get same-day service from licensed plumbers, clear flat-rate
+              pricing before work starts, and repairs done right the first time.
+            </p>
+            <div class="hero__cta-group">
+              <a href="contact.html" class="btn btn--primary"
+                >Get Upfront Quote</a
+              >
+              <a href="tel:+14795550182" class="btn btn--secondary-light"
+                >Call a Licensed Plumber</a
+              >
+            </div>
+            <p class="hero__availability">
+              Same-day appointments across Fayetteville and Northwest Arkansas.
+            </p>
+          </div>
+          <div class="hero__credential-ring" aria-hidden="true">
+            <div class="credential-ring__outer"></div>
+            <div class="credential-ring__inner">
+              <span class="years">14+</span>
+              <span class="est">Years serving local homes</span>
+            </div>
+            <div class="credential-ring__stat stat--1">
+              <span class="stat-value">1,200+</span>
+              <span class="stat-label">Homes served</span>
+            </div>
+            <div class="credential-ring__stat stat--2">
+              <span class="stat-value">300+</span>
+              <span class="stat-label">5-star reviews</span>
+            </div>
+            <div class="credential-ring__stat stat--3">
+              <span class="stat-value">AR</span>
+              <span class="stat-label">License #PB-2847</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section reveal">
+      <section class="section section-about-story reveal">
         <div class="container guide-container">
           <div class="guide-content">
+            <p class="guide-eyebrow">How we grew</p>
             <h2>Our Story: From a Single Truck to Fayetteville's First Call</h2>
             <p>
               Ozark Plumbing Co. was founded in 2012 by Mike Davis, a master
@@ -281,6 +339,15 @@
               bit. We're still just a local team dedicated to fixing your
               plumbing problems right the first time.
             </p>
+            <p class="guide-pull-quote">
+              “We built this company by solving the real plumbing problem first,
+              then earning the next call through honest work.”
+            </p>
+            <ul class="guide-trust-list">
+              <li>Same-day scheduling for most Fayetteville service calls</li>
+              <li>Flat-rate quotes approved before any work begins</li>
+              <li>Licensed professionals who protect and clean your home</li>
+            </ul>
           </div>
           <div class="guide-stats">
             <div class="stat-block">
@@ -299,11 +366,14 @@
               <div class="stat-block__value">100%</div>
               <div class="stat-block__label">Satisfaction Guarantee</div>
             </div>
+            <div class="license-badge">
+              Arkansas licensed • Bonded and insured • Locally owned
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="commitment" class="section reveal">
+      <section id="commitment" class="section section-about-commitment reveal">
         <div class="container section-header">
           <h2>Our Commitment</h2>
           <p>
@@ -320,11 +390,13 @@
                 class="commitment-icon"
                 alt="Scale icon representing honest pricing"
               />
+              <p class="commitment-item__eyebrow">No surprise charges</p>
               <h3>Honest Pricing</h3>
               <p>
                 We provide clear, upfront pricing before any work begins. You'll
                 never have to worry about hidden fees or surprise charges. Just
-                honest work at a fair price.
+                honest work at a fair price, so you can approve the repair with
+                confidence.
               </p>
             </div>
             <div class="commitment-item">
@@ -333,11 +405,13 @@
                 class="commitment-icon"
                 alt="Wrench icon representing expert workmanship"
               />
+              <p class="commitment-item__eyebrow">Repairs that hold up</p>
               <h3>Expert Workmanship</h3>
               <p>
                 Our licensed and insured plumbers are masters of their craft. We
                 invest in continuous training to ensure we're using the best
-                techniques and technologies for every repair and installation.
+                techniques and technologies for every repair and installation,
+                reducing repeat issues and preventing expensive future damage.
               </p>
             </div>
             <div class="commitment-item">
@@ -346,18 +420,57 @@
                 class="commitment-icon"
                 alt="Heart icon representing customer satisfaction"
               />
+              <p class="commitment-item__eyebrow">Respect for your home</p>
               <h3>Customer Satisfaction</h3>
               <p>
                 Your satisfaction is our top priority. We treat your home with
                 respect, clean up after ourselves, and ensure you're happy with
-                the results. If it's not right, we'll make it right.
+                the results. If it's not right, we'll make it right, so you
+                never pay for unresolved plumbing problems.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section reveal" aria-labelledby="proof-heading">
+      <section
+        class="section section-about-testimonials reveal"
+        aria-labelledby="customer-proof-heading"
+      >
+        <div class="container section-header">
+          <h2 id="customer-proof-heading">What Fayetteville Homeowners Say</h2>
+          <p>
+            Real feedback from local homeowners who needed fast, reliable
+            plumbing help.
+          </p>
+        </div>
+        <div class="container">
+          <div class="about-testimonials-grid">
+            <article class="about-testimonial">
+              <p class="about-testimonial__rating" aria-hidden="true">★★★★★</p>
+              <p>
+                “They showed up the same day, explained exactly what was wrong,
+                and gave us a flat-rate quote before starting. No surprises, and
+                the leak was fixed in one visit.”
+              </p>
+              <p class="about-testimonial__author">Homeowner in Fayetteville</p>
+            </article>
+            <article class="about-testimonial">
+              <p class="about-testimonial__rating" aria-hidden="true">★★★★★</p>
+              <p>
+                “Professional, respectful, and fast. They protected our floors,
+                cleaned up everything, and the final price matched the quote.”
+              </p>
+              <p class="about-testimonial__author">Homeowner in Springdale</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-about-proof reveal"
+        aria-labelledby="proof-heading"
+      >
         <div class="container section-header">
           <h2 id="proof-heading">How We Verify These Numbers</h2>
           <p>
@@ -366,31 +479,36 @@
           </p>
         </div>
         <div class="container">
-          <div class="guide-content" style="max-width: 80ch; margin: 0 auto">
-            <ul>
-              <li>
-                <strong>1,200+ homes served:</strong> Based on completed work
-                orders in our internal service records from 2012 through April
-                2026.
-              </li>
-              <li>
-                <strong>300+ 5-star reviews:</strong> Combined 5-star public
-                reviews across major listing and search platforms as of April
-                2026.
-              </li>
-              <li>
-                <strong>AR License #PB-2847:</strong> State plumbing contractor
-                license shown on this page and available upon request.
-              </li>
-              <li>
-                <strong>100% satisfaction guarantee:</strong> Company policy
-                applied to all covered repairs and installations.
-              </li>
-            </ul>
-            <p>
-              <em>Last verified: April 2026.</em>
-            </p>
+          <div class="proof-grid">
+            <article class="proof-card">
+              <h3>1,200+ homes served</h3>
+              <p>
+                Based on completed work orders in our internal service records
+                from 2012 through April 2026.
+              </p>
+            </article>
+            <article class="proof-card">
+              <h3>300+ 5-star reviews</h3>
+              <p>
+                Combined 5-star public reviews across major listing and search
+                platforms as of April 2026.
+              </p>
+            </article>
+            <article class="proof-card">
+              <h3>AR License #PB-2847</h3>
+              <p>
+                State plumbing contractor license shown on this page and
+                available upon request.
+              </p>
+            </article>
+            <article class="proof-card">
+              <h3>100% satisfaction guarantee</h3>
+              <p>
+                Company policy applied to all covered repairs and installations.
+              </p>
+            </article>
           </div>
+          <p class="proof-note"><em>Last verified: April 2026.</em></p>
         </div>
       </section>
 
@@ -405,7 +523,8 @@
               <h3>Honest Diagnosis</h3>
               <p>
                 We'll find the root cause of the problem and explain your
-                options clearly, without technical jargon or sales pressure.
+                options clearly, without technical jargon or sales pressure, so
+                you can make the right decision quickly.
               </p>
             </div>
             <div class="plan-step">
@@ -413,7 +532,8 @@
               <h3>Upfront Pricing</h3>
               <p>
                 You'll receive a detailed, flat-rate quote before we start any
-                work. The price you approve is the price you pay. Period.
+                work. The price you approve is the price you pay, so you can
+                avoid budget surprises.
               </p>
             </div>
             <div class="plan-step">
@@ -421,14 +541,15 @@
               <h3>Respect for Your Home</h3>
               <p>
                 Our technicians wear shoe covers, use drop cloths, and clean up
-                thoroughly, leaving your home as clean as we found it.
+                thoroughly, leaving your home as clean as we found it and your
+                day on track.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about-faq" class="section reveal">
+      <section id="about-faq" class="section section-about-faq reveal">
         <div class="container section-header">
           <h2>About Ozark Plumbing Co. FAQ</h2>
           <p>
@@ -437,38 +558,74 @@
           </p>
         </div>
         <div class="container">
-          <div class="guide-content" style="max-width: 80ch; margin: 0 auto">
-            <h3>How long has Ozark Plumbing Co. been in business?</h3>
-            <p>
-              Ozark Plumbing Co. was founded in 2012 by master plumber Mike
-              Davis. We have served more than 1,200 homes across Fayetteville
-              and Northwest Arkansas.
-            </p>
+          <div class="about-faq-grid">
+            <article class="about-faq-item">
+              <h3>How long has Ozark Plumbing Co. been in business?</h3>
+              <p>
+                Ozark Plumbing Co. was founded in 2012 by master plumber Mike
+                Davis. We have served more than 1,200 homes across Fayetteville
+                and Northwest Arkansas.
+              </p>
+            </article>
 
-            <h3>Is Ozark Plumbing Co. licensed and insured?</h3>
-            <p>
-              Yes. Ozark Plumbing Co. is licensed under AR License #PB-2847,
-              bonded, and insured. Our team includes licensed professionals who
-              complete ongoing training.
-            </p>
+            <article class="about-faq-item">
+              <h3>Is Ozark Plumbing Co. licensed and insured?</h3>
+              <p>
+                Yes. Ozark Plumbing Co. is licensed under AR License #PB-2847,
+                bonded, and insured. Our team includes licensed professionals
+                who complete ongoing training.
+              </p>
+            </article>
 
-            <h3>What areas does Ozark Plumbing Co. serve?</h3>
-            <p>
-              We serve Fayetteville, AR and surrounding Northwest Arkansas
-              communities, including Bentonville, Rogers, and Springdale.
-            </p>
+            <article class="about-faq-item">
+              <h3>What areas does Ozark Plumbing Co. serve?</h3>
+              <p>
+                We serve Fayetteville, AR and surrounding Northwest Arkansas
+                communities, including Bentonville, Rogers, and Springdale.
+              </p>
+            </article>
 
-            <h3>Does Ozark Plumbing Co. offer a workmanship guarantee?</h3>
-            <p>
-              Yes. We stand behind every job with a 100% satisfaction guarantee.
-              If something is not right, we will make it right.
-            </p>
+            <article class="about-faq-item">
+              <h3>Does Ozark Plumbing Co. offer a workmanship guarantee?</h3>
+              <p>
+                Yes. We stand behind every job with a 100% satisfaction
+                guarantee. If something is not right, we will make it right.
+              </p>
+            </article>
 
-            <h3>Does Ozark Plumbing Co. provide upfront pricing?</h3>
-            <p>
-              Yes. We provide clear, flat-rate pricing before work begins. The
-              price you approve is the price you pay, without hidden fees.
-            </p>
+            <article class="about-faq-item">
+              <h3>Does Ozark Plumbing Co. provide upfront pricing?</h3>
+              <p>
+                Yes. We provide clear, flat-rate pricing before work begins. The
+                price you approve is the price you pay, without hidden fees.
+              </p>
+            </article>
+
+            <article class="about-faq-item">
+              <h3>How quickly can I get plumbing service in Fayetteville?</h3>
+              <p>
+                In most cases, we can schedule same-day plumbing service in
+                Fayetteville and nearby Northwest Arkansas communities.
+                Emergency service is available 24/7.
+              </p>
+            </article>
+
+            <article class="about-faq-item">
+              <h3>What happens after I schedule service?</h3>
+              <p>
+                After you book, we confirm your appointment window, dispatch a
+                licensed technician, diagnose the issue, and provide upfront
+                pricing before work begins.
+              </p>
+            </article>
+
+            <article class="about-faq-item">
+              <h3>Do your repairs and installations include a warranty?</h3>
+              <p>
+                Yes. Covered repairs and installations are backed by our
+                workmanship commitment and 100% satisfaction guarantee.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -476,18 +633,31 @@
 
     <!-- ============================== FOOTER ============================== -->
     <footer class="site-footer">
+      <div class="footer-amber-bar"></div>
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-col">
-            <h4>Ozark Plumbing Co.</h4>
-            <p>
-              Fayetteville's Trusted Plumber Since 2012. Honest pricing,
-              same-day service, and a satisfaction guarantee.
+          <div class="footer-col-group">
+            <div class="footer-wordmark">Ozark Plumbing Co.</div>
+            <p class="footer-tagline">
+              Fayetteville's trusted plumber since 2012. Honest pricing,
+              same-day service, satisfaction guaranteed.
             </p>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
+            <div class="footer-service-chip">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              NW Arkansas
+            </div>
+            <ul class="footer-contact-list">
               <li><a href="tel:+14795550182">(479) 555-0182</a></li>
               <li>
                 <a href="mailto:info@ozarkplumbingco.com"
@@ -496,27 +666,106 @@
               </li>
               <li>1847 W. Sycamore St.<br />Fayetteville, AR 72701</li>
             </ul>
+            <div class="footer-social">
+              <a href="#" class="footer-social__link" aria-label="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer-social__link" aria-label="Google">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                    fill="#34A853"
+                  />
+                  <path
+                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                    fill="#FBBC05"
+                  />
+                  <path
+                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                    fill="#EA4335"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer-social__link" aria-label="Yelp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.16 12.73l-4.46 1.44c-.51.16-.96-.41-.68-.87l2.26-3.86c.28-.47.93-.34 1.04.19l.98 4.34c.04.17-.04.35-.2.42l.06-.66zm-8.97 5.94l.42 4.56c.05.53.67.75 1.02.35l3.24-3.6c.34-.38.13-.97-.39-1.06l-4.03-.68c-.17-.03-.33.07-.38.24l.12.19zm-6.2-4.73l4.46 1.44c.51.17.99-.38.71-.85L7.9 10.67c-.28-.47-.93-.34-1.04.19l-.98 4.34c-.04.17.04.35.2.42l.01-.68zM12 13.41c-.78 0-1.41-.63-1.41-1.41s.63-1.41 1.41-1.41 1.41.63 1.41 1.41-.63 1.41-1.41 1.41zm.41-9.37l-.42-2.56C11.93.95 11.28.73 10.93 1.13L7.69 4.73c-.34.38-.13.95.39 1.04l4.03.68c.17.03.33-.07.38-.24l-.08-.17z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Schedule Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Hours</h4>
-            <p>Mon–Fri: 7am–6pm<br />Sat: 8am–4pm<br />Emergency: 24/7</p>
-            <p><strong>AR License #PB-2847</strong></p>
+          <div class="footer-col-group footer-col-group--right">
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Schedule Service</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Fri: 7am–6pm<br />Sat: 8am–4pm<br />Emergency: 24/7</p>
+              <p><strong>AR License #PB-2847</strong></p>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Ozark Plumbing Co. | Licensed, Bonded & Insured</p>
+          <p class="footer-bottom__copy">&copy; 2026 Ozark Plumbing Co.</p>
+          <div class="footer-trust-badges">
+            <span>&#10003; Licensed</span>
+            <span>&#10003; Bonded</span>
+            <span>&#10003; Insured</span>
+            <span class="footer-trust-star">&#9733; 4.9 Google Rating</span>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- ============================== BUILT BY ============================== -->
+    <div class="built-by-bar">
+      <span
+        >Built by
+        <a
+          href="https://localsearchally.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="built-by__local">Local Search</span>
+          <span class="built-by__ally">Ally</span></a
+        ></span
+      >
+    </div>
 
     <script src="js/main.js"></script>
   </body>
