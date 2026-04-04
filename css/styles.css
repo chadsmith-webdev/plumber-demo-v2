@@ -1883,7 +1883,7 @@ a:hover {
 .site-footer {
   background-color: var(--primary-dark);
   color: var(--text-inverted);
-  padding: 60px 0 20px;
+  padding: 80px 0 24px;
   font-size: 0.9rem;
 }
 .footer-grid {
