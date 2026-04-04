@@ -1520,7 +1520,7 @@ a:hover {
     grid-template-columns: 270px 1fr;
     text-align: left;
     gap: 64px;
-    align-items: start;
+    align-items: center;
   }
   .guarantee-intro {
     margin-left: 0;
