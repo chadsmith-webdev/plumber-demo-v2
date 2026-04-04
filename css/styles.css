@@ -1390,29 +1390,21 @@ a:hover {
 .service-area-map {
   display: flex;
   justify-content: center;
+  align-self: stretch;
 }
 .service-area-map__inner {
   position: relative;
   width: 100%;
-  max-width: 340px;
+  min-height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
-.service-area-map__inner svg {
-  width: 100%;
-  height: auto;
-}
-.service-area-map__badge {
+.service-area-map__inner iframe {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
-  background: rgba(200,146,58,0.15);
-  border: 1px solid rgba(200,146,58,0.4);
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 5px 12px;
-  border-radius: 50px;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 .service-area-eyebrow {
   display: inline-block;
@@ -1430,7 +1422,7 @@ a:hover {
   margin-bottom: 12px;
 }
 .service-area-content > p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 28px;
   line-height: 1.7;
 }
@@ -1444,33 +1436,35 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(255,255,255,0.06);
-  color: rgba(255,255,255,0.8);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 6px 14px;
   border-radius: 50px;
   font-size: 0.83rem;
   font-weight: 500;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 .area-chip:hover {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .area-chip--primary {
-  background: rgba(200,146,58,0.15);
-  border-color: rgba(200,146,58,0.4);
+  background: rgba(200, 146, 58, 0.15);
+  border-color: rgba(200, 146, 58, 0.4);
   color: var(--accent);
 }
 .area-chip--primary:hover {
-  background: rgba(200,146,58,0.25);
+  background: rgba(200, 146, 58, 0.25);
 }
 .service-area-stat {
   display: flex;
   align-items: center;
   gap: 0;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -1489,14 +1483,14 @@ a:hover {
 }
 .service-area-stat__item span {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 .service-area-stat__divider {
   width: 1px;
   height: 40px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ==============================
