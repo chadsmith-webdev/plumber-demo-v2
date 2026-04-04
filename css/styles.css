@@ -1845,7 +1845,8 @@ a:hover {
    SERVICES TRUST STRIP
    ============================== */
 .section-svc-trust {
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 60px 0;
 }
 .svc-trust-grid {
@@ -1883,7 +1884,7 @@ a:hover {
    FAQ
    ============================== */
 .section-faq {
-  background-color: var(--primary);
+  background-color: var(--bg);
   padding: 80px 0;
 }
 .faq-header {
@@ -1902,8 +1903,10 @@ a:hover {
   margin-bottom: 16px;
 }
 .faq-header h2 {
-  color: #fff;
-  margin-bottom: 0;
+  color: var(--primary);
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  max-width: 28ch;
+  margin: 0 auto;
 }
 .faq-grid {
   display: grid;
@@ -1916,8 +1919,8 @@ a:hover {
   gap: 12px;
 }
 .faq-item {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.2s ease;
@@ -1933,7 +1936,7 @@ a:hover {
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
-  color: #fff;
+  color: var(--primary);
   gap: 16px;
 }
 .faq-chevron {
@@ -1957,7 +1960,7 @@ a:hover {
 .faq-answer p {
   padding: 0 24px 20px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--text-muted);
   line-height: 1.7;
   font-size: 0.95rem;
 }
@@ -2480,6 +2483,13 @@ a:hover {
     grid-row: auto;
     aspect-ratio: 4 / 3;
   }
+  .services-grid--3,
+  .services-grid--4 {
+    grid-template-columns: 1fr;
+  }
+  .svc-trust-divider {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -2791,6 +2801,7 @@ a:hover {
   gap: 8px;
   list-style: none;
   font-size: 0.85rem;
+  justify-content: center;
 }
 .breadcrumb ol li {
   display: flex;
