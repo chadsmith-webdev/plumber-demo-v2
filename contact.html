@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://unpkg.com/heroicons@2.1.3/24/outline/index.js"></script>
   </head>
-  <body>
+  <body class="page-contact">
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <!-- ============================== HEADER ============================== -->
     <header id="site-header">
       <div class="container header-container">
@@ -25,6 +26,9 @@
           <img
             src="https://unpkg.com/heroicons@2.1.3/24/outline/wrench-screwdriver.svg"
             class="logo__icon"
+            alt=""
+            width="32"
+            height="32"
           />
           <span>OZARK PLUMBING CO.</span>
         </a>
@@ -33,7 +37,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
           </ul>
         </nav>
         <div class="header-contact">
@@ -53,98 +57,200 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
         <li>
           <a href="contact.html" class="btn btn--primary">Schedule Service</a>
         </li>
       </ul>
     </nav>
 
-    <main>
-      <section
-        class="section-hero"
-        style="padding-top: 40px; padding-bottom: 40px"
-      >
-        <div class="container">
-          <h1 class="hero__headline" style="text-align: center">
-            Get In Touch
-          </h1>
-          <p
-            class="hero__subheadline"
-            style="text-align: center; max-width: 60ch; margin: 20px auto 0"
+    <main id="main-content">
+      <section class="section-hero section-hero--contact">
+        <div class="container hero-container--contact">
+          <div class="hero__content hero__content--contact">
+            <span class="hero__eyebrow"
+              >Fast Scheduling For Fayetteville Homes</span
+            >
+            <h1 class="hero__headline">
+              Call Now for Emergency Plumbing or Book Service Today
+            </h1>
+            <p class="hero__subheadline">
+              Same-day appointments, upfront pricing, and licensed local
+              plumbers for leaks, drains, water heaters, and urgent repairs.
+            </p>
+            <div class="hero__cta-group">
+              <a href="tel:+14795550182" class="btn btn--primary"
+                >Call (479) 555-0182</a
+              >
+              <a href="#contact-form" class="btn btn--secondary-light"
+                >Request Service Online</a
+              >
+            </div>
+            <p class="hero__availability">
+              Live dispatch for emergencies. Most online requests receive a
+              response within 15 minutes during business hours.
+            </p>
+          </div>
+
+          <aside
+            class="contact-hero-panel reveal"
+            aria-label="Service highlights"
           >
-            Ready for reliable plumbing service? Contact us today—we're here to
-            help.
-          </p>
+            <p class="contact-hero-panel__eyebrow">
+              Why People Reach Out First
+            </p>
+            <div class="contact-hero-panel__alert">
+              24/7 Emergency Service Available
+            </div>
+            <ul class="contact-hero-panel__list">
+              <li>
+                <strong>Licensed, bonded, and insured</strong>
+                <span
+                  >Trusted local service with clean, code-compliant work.</span
+                >
+              </li>
+              <li>
+                <strong>Upfront pricing before work begins</strong>
+                <span
+                  >No hourly surprises or hidden add-ons after arrival.</span
+                >
+              </li>
+              <li>
+                <strong>1,200+ Fayetteville-area service calls</strong>
+                <span
+                  >Fast routing for repeat neighborhoods and nearby towns.</span
+                >
+              </li>
+            </ul>
+            <div class="contact-hero-panel__footer">
+              <span>AR License #PB-2847</span>
+              <span>Same-Day Scheduling</span>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section id="contact-form" class="section reveal">
+      <section id="contact-form" class="section section--contact-intro reveal">
         <div class="container">
           <div class="contact-layout">
             <div class="contact-info">
-              <h3>Contact Information</h3>
-              <p>
-                Reach out to us any time. For emergencies, please call us
-                directly for the fastest response.
-              </p>
+              <div class="contact-card contact-card--emergency">
+                <p class="contact-card__eyebrow">Need Immediate Help?</p>
+                <h2>
+                  Plumbing emergency? Call us instead of waiting on the form.
+                </h2>
+                <p>
+                  Burst pipe, no hot water, active leak, or backed-up drain?
+                  Call for the fastest dispatch.
+                </p>
+                <a href="tel:+14795550182" class="btn btn--primary"
+                  >Call Emergency Line</a
+                >
+              </div>
 
-              <div class="contact-details">
-                <div class="contact-detail-item">
-                  <img
-                    src="https://unpkg.com/heroicons@2.1.3/24/outline/phone.svg"
-                    class="contact-icon"
-                  />
-                  <div>
-                    <strong>Phone</strong>
-                    <a href="tel:+14795550182">(479) 555-0182</a>
+              <div class="contact-card">
+                <h3>Contact Information</h3>
+                <p>
+                  Reach out any time. For emergencies, calling directly is still
+                  the fastest way to get help on the schedule.
+                </p>
+
+                <div class="contact-details">
+                  <div class="contact-detail-item">
+                    <img
+                      src="https://unpkg.com/heroicons@2.1.3/24/outline/phone.svg"
+                      class="contact-icon"
+                      alt=""
+                      aria-hidden="true"
+                      width="30"
+                      height="30"
+                    />
+                    <div>
+                      <strong>Phone</strong>
+                      <a href="tel:+14795550182">(479) 555-0182</a>
+                    </div>
                   </div>
-                </div>
-                <div class="contact-detail-item">
-                  <img
-                    src="https://unpkg.com/heroicons@2.1.3/24/outline/envelope.svg"
-                    class="contact-icon"
-                  />
-                  <div>
-                    <strong>Email</strong>
-                    <a href="mailto:info@ozarkplumbingco.com"
-                      >info@ozarkplumbingco.com</a
-                    >
+                  <div class="contact-detail-item">
+                    <img
+                      src="https://unpkg.com/heroicons@2.1.3/24/outline/envelope.svg"
+                      class="contact-icon"
+                      alt=""
+                      aria-hidden="true"
+                      width="30"
+                      height="30"
+                    />
+                    <div>
+                      <strong>Email</strong>
+                      <a href="mailto:info@ozarkplumbingco.com"
+                        >info@ozarkplumbingco.com</a
+                      >
+                    </div>
                   </div>
-                </div>
-                <div class="contact-detail-item">
-                  <img
-                    src="https://unpkg.com/heroicons@2.1.3/24/outline/map-pin.svg"
-                    class="contact-icon"
-                  />
-                  <div>
-                    <strong>Address</strong>
-                    <p>1847 W. Sycamore St.<br />Fayetteville, AR 72701</p>
+                  <div class="contact-detail-item">
+                    <img
+                      src="https://unpkg.com/heroicons@2.1.3/24/outline/map-pin.svg"
+                      class="contact-icon"
+                      alt=""
+                      aria-hidden="true"
+                      width="30"
+                      height="30"
+                    />
+                    <div>
+                      <strong>Address</strong>
+                      <p>1847 W. Sycamore St.<br />Fayetteville, AR 72701</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <h3>Business Hours</h3>
-              <ul class="business-hours">
-                <li><strong>Mon–Fri:</strong> 7am – 6pm</li>
-                <li><strong>Saturday:</strong> 8am – 4pm</li>
-                <li><strong>Sunday:</strong> Closed</li>
-                <li><strong>Emergency Service:</strong> 24/7</li>
-              </ul>
+              <div class="contact-card">
+                <h3>Business Hours</h3>
+                <ul class="business-hours">
+                  <li><strong>Mon–Fri</strong><span>7am – 6pm</span></li>
+                  <li><strong>Saturday</strong><span>8am – 4pm</span></li>
+                  <li><strong>Sunday</strong><span>Closed</span></li>
+                  <li><strong>Emergency Service</strong><span>24/7</span></li>
+                </ul>
+              </div>
             </div>
-            <form class="form">
+
+            <form class="form contact-form">
               <h3>Schedule a Service</h3>
+              <p class="form-intro">
+                Tell us what is happening and we will match you with the right
+                technician.
+              </p>
               <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  inputmode="email"
+                  spellcheck="false"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  inputmode="tel"
+                />
               </div>
               <div class="form-group">
                 <label for="service">What service do you need?</label>
@@ -166,42 +272,91 @@
                   required
                 ></textarea>
               </div>
+              <p class="form-response" aria-live="polite">
+                We will confirm next steps by phone or email. If the issue is
+                urgent, call instead of waiting for a reply.
+              </p>
               <button type="submit" class="btn btn--primary">
-                Submit Request
+                Request Service
               </button>
             </form>
           </div>
         </div>
       </section>
 
-      <section id="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103234.3222742083!2d-94.236094!3d36.072996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b7d5c1350c3%3A0x8b5c8321467e066!2sFayetteville%2C%20AR!5e0!3m2!1sen!2sus!4v1678886300000!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Map of Fayetteville, AR"
-        ></iframe>
+      <section class="section section--contact-map">
+        <div class="container">
+          <div class="contact-map-layout">
+            <div class="contact-map-copy reveal">
+              <p class="contact-card__eyebrow">Where We Work</p>
+              <h2>
+                Serving Fayetteville and nearby Northwest Arkansas neighborhoods
+              </h2>
+              <p>
+                Visit our Fayetteville office or call for service in Springdale,
+                Farmington, Prairie Grove, Goshen, Elkins, and nearby
+                communities.
+              </p>
+              <a
+                href="https://maps.google.com/?q=1847+W+Sycamore+St+Fayetteville+AR+72701"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noreferrer"
+                >Get Directions</a
+              >
+              <ul class="service-area-list" aria-label="Primary service areas">
+                <li>Fayetteville</li>
+                <li>Springdale</li>
+                <li>Farmington</li>
+                <li>Prairie Grove</li>
+                <li>Goshen</li>
+                <li>Elkins</li>
+              </ul>
+            </div>
+
+            <div id="map" class="contact-map-frame reveal">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103234.3222742083!2d-94.236094!3d36.072996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b7d5c1350c3%3A0x8b5c8321467e066!2sFayetteville%2C%20AR!5e0!3m2!1sen!2sus!4v1678886300000!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map of Fayetteville, AR"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- ============================== FOOTER ============================== -->
     <footer class="site-footer">
+      <div class="footer-amber-bar"></div>
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-col">
-            <h4>Ozark Plumbing Co.</h4>
-            <p>
-              Fayetteville's Trusted Plumber Since 2012. Honest pricing,
-              same-day service, and a satisfaction guarantee.
+          <div class="footer-col-group">
+            <div class="footer-wordmark">Ozark Plumbing Co.</div>
+            <p class="footer-tagline">
+              Fayetteville's trusted plumber since 2012. Honest pricing,
+              same-day service, satisfaction guaranteed.
             </p>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
+            <div class="footer-service-chip">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              NW Arkansas
+            </div>
+            <ul class="footer-contact-list">
               <li><a href="tel:+14795550182">(479) 555-0182</a></li>
               <li>
                 <a href="mailto:info@ozarkplumbingco.com"
@@ -210,27 +365,106 @@
               </li>
               <li>1847 W. Sycamore St.<br />Fayetteville, AR 72701</li>
             </ul>
+            <div class="footer-social">
+              <a href="#" class="footer-social__link" aria-label="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer-social__link" aria-label="Google">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                    fill="#34A853"
+                  />
+                  <path
+                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                    fill="#FBBC05"
+                  />
+                  <path
+                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                    fill="#EA4335"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer-social__link" aria-label="Yelp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.16 12.73l-4.46 1.44c-.51.16-.96-.41-.68-.87l2.26-3.86c.28-.47.93-.34 1.04.19l.98 4.34c.04.17-.04.35-.2.42l.06-.66zm-8.97 5.94l.42 4.56c.05.53.67.75 1.02.35l3.24-3.6c.34-.38.13-.97-.39-1.06l-4.03-.68c-.17-.03-.33.07-.38.24l.12.19zm-6.2-4.73l4.46 1.44c.51.17.99-.38.71-.85L7.9 10.67c-.28-.47-.93-.34-1.04.19l-.98 4.34c-.04.17.04.35.2.42l.01-.68zM12 13.41c-.78 0-1.41-.63-1.41-1.41s.63-1.41 1.41-1.41 1.41.63 1.41 1.41-.63 1.41-1.41 1.41zm.41-9.37l-.42-2.56C11.93.95 11.28.73 10.93 1.13L7.69 4.73c-.34.38-.13.95.39 1.04l4.03.68c.17.03.33-.07.38-.24l-.08-.17z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Schedule Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Hours</h4>
-            <p>Mon–Fri: 7am–6pm<br />Sat: 8am–4pm<br />Emergency: 24/7</p>
-            <p><strong>AR License #PB-2847</strong></p>
+          <div class="footer-col-group footer-col-group--right">
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Schedule Service</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Fri: 7am–6pm<br />Sat: 8am–4pm<br />Emergency: 24/7</p>
+              <p><strong>AR License #PB-2847</strong></p>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Ozark Plumbing Co. | Licensed, Bonded & Insured</p>
+          <p class="footer-bottom__copy">&copy; 2026 Ozark Plumbing Co.</p>
+          <div class="footer-trust-badges">
+            <span>&#10003; Licensed</span>
+            <span>&#10003; Bonded</span>
+            <span>&#10003; Insured</span>
+            <span class="footer-trust-star">&#9733; 4.9 Google Rating</span>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- ============================== BUILT BY ============================== -->
+    <div class="built-by-bar">
+      <span
+        >Built by
+        <a
+          href="https://localsearchally.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="built-by__local">Local Search</span>
+          <span class="built-by__ally">Ally</span></a
+        ></span
+      >
+    </div>
 
     <script src="js/main.js"></script>
   </body>
