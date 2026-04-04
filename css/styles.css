@@ -1992,6 +1992,81 @@ a:hover {
   color: var(--accent) !important;
   opacity: 0.88;
 }
+.footer-col-group {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contact-list {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.footer-contact-list li {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-contact-list a {
+  color: var(--text-inverted);
+  opacity: 0.8;
+}
+.footer-contact-list a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+.footer-col-group--right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.footer-col-group--right h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--bg-alt);
+  margin-bottom: 15px;
+}
+.footer-col-group--right ul {
+  list-style: none;
+}
+.footer-col-group--right li {
+  margin-bottom: 10px;
+}
+.footer-col-group--right a {
+  color: var(--text-inverted);
+  opacity: 0.8;
+}
+.footer-col-group--right a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+.footer-col-group--right p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   BUILT BY BAR
+   ============================== */
+.built-by-bar {
+  background-color: #0a0a0a;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.built-by-bar a {
+  text-decoration: none;
+}
+.built-by-bar a:hover .built-by__ally {
+  text-decoration: underline;
+}
+.built-by__local {
+  color: #f0f0f0;
+}
+.built-by__ally {
+  color: #7bafd4;
+}
 
 /* ==============================
    GALLERY PLACEHOLDERS
@@ -2423,124 +2498,6 @@ a:hover {
   outline: none;
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(5, 122, 255, 0.2);
-}
-
-/* ============================== FOOTER ============================== */
-.footer-amber-bar {
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), rgba(200, 146, 58, 0.3));
-}
-.site-footer {
-  background-color: var(--primary-dark);
-  color: var(--text-inverted);
-  padding: 60px 0 20px;
-  font-size: 0.9rem;
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-.footer-wordmark {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 12px;
-  line-height: 1.2;
-}
-.footer-tagline {
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.88rem;
-  line-height: 1.65;
-  margin-bottom: 18px;
-}
-.footer-service-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(200, 146, 58, 0.12);
-  border: 1px solid rgba(200, 146, 58, 0.3);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 20px;
-}
-.footer-col h4 {
-  font-family: var(--font-body);
-  font-weight: 600;
-  color: var(--bg-alt);
-  margin-bottom: 15px;
-}
-.footer-col ul {
-  list-style: none;
-}
-.footer-col li {
-  margin-bottom: 10px;
-}
-.footer-col a {
-  color: var(--text-inverted);
-  opacity: 0.8;
-}
-.footer-col a:hover {
-  opacity: 1;
-  color: var(--accent);
-}
-.footer-social {
-  display: flex;
-  gap: 10px;
-  margin-top: 18px;
-}
-.footer-social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.62);
-  opacity: 1;
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
-}
-.footer-social__link:hover {
-  background-color: rgba(200, 146, 58, 0.18);
-  border-color: rgba(200, 146, 58, 0.5);
-  color: var(--accent);
-  opacity: 1;
-}
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-.footer-bottom__copy {
-  opacity: 0.5;
-  margin: 0;
-  font-size: 0.85rem;
-}
-.footer-trust-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 14px;
-}
-.footer-trust-badges span {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.48);
-  white-space: nowrap;
-}
-.footer-trust-star {
-  color: var(--accent) !important;
-  opacity: 0.88;
 }
 
 #map {
