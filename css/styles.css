@@ -443,12 +443,64 @@ a:hover {
 .section-stakes {
   background-color: var(--accent);
   color: var(--primary-dark);
-  text-align: center;
-  padding: 20px 0;
-  font-weight: 600;
+  padding: 50px 0;
 }
-.section-stakes p {
-  margin: 0 auto;
+.stakes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.stakes-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.stakes-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  filter: brightness(0) opacity(0.5);
+  transform: translateY(-4px);
+}
+.stakes-pull {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.stakes-pull__small {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  opacity: 0.75;
+}
+.stakes-pull__big {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: var(--primary-dark);
+}
+.stakes-right p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: rgba(18, 42, 31, 0.85);
+  max-width: 52ch;
+}
+.stakes-right p:last-of-type {
+  margin-bottom: 20px;
+}
+.stakes-cta {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+.stakes-cta:hover {
+  opacity: 0.7;
 }
 
 /* ==============================
@@ -1168,6 +1220,9 @@ a:hover {
    RESPONSIVE — Tablet
    ============================== */
 @media (min-width: 768px) {
+  .stakes-container {
+    grid-template-columns: 1fr 1fr;
+  }
   .problem-cards {
     grid-template-columns: repeat(2, 1fr);
   }
