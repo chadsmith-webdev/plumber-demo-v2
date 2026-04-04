@@ -1870,6 +1870,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.4);
   margin-bottom: 0;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* ==============================
@@ -2193,10 +2194,6 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* ==============================
-   RESPONSIVE — Desktop
-   ============================== */
 @media (min-width: 1024px) {
   .guarantee-inner {
     grid-template-columns: 270px 1fr;
@@ -2268,7 +2265,7 @@ a:hover {
     gap: 16px;
   }
   .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
