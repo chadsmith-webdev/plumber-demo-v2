@@ -1140,11 +1140,8 @@ a:hover {
   background-color: var(--bg);
   padding: 80px 0;
 }
-.success-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-  align-items: center;
+.success-header {
+  margin-bottom: 32px;
 }
 .success-eyebrow {
   display: inline-block;
@@ -1157,14 +1154,15 @@ a:hover {
   padding-bottom: 4px;
   margin-bottom: 16px;
 }
-.success-content h2 {
-  margin-bottom: 28px;
+.success-header h2 {
+  margin-bottom: 0;
   color: var(--primary);
 }
 .success-contrast {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 .success-before,
 .success-after {
@@ -1225,6 +1223,10 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  margin-bottom: 32px;
+}
+.success-cta {
+  text-align: center;
 }
 .success-outcome {
   background: #fff;
@@ -1786,9 +1788,8 @@ a:hover {
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  .success-container {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
+  .success-outcomes {
+    grid-template-columns: repeat(4, 1fr);
   }
   .testimonials-grid {
     grid-template-columns: repeat(3, 1fr);
