@@ -487,33 +487,131 @@ a:hover {
 }
 
 /* ==============================
-   PROBLEM CHIPS
+   PROBLEM SECTION
    ============================== */
-.problem-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 30px;
+.section-problem {
+  background-color: #0d1f17;
+  color: var(--text-inverted);
+  padding: 90px 0 0;
+  position: relative;
+  overflow: hidden;
 }
-.chip {
+.section-problem::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(
+      ellipse at 20% 50%,
+      rgba(28, 61, 46, 0.6) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(200, 146, 58, 0.05) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+.problem-intro {
+  max-width: 680px;
+  margin: 0 auto 60px;
+  text-align: center;
+  position: relative;
+}
+.problem-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.problem-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.problem-agitate {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.75;
+  margin-bottom: 36px;
+  max-width: 58ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.problem-stat {
   display: inline-flex;
+  align-items: baseline;
+  gap: 16px;
+  background: rgba(200, 146, 58, 0.08);
+  border: 1px solid rgba(200, 146, 58, 0.3);
+  border-radius: 10px;
+  padding: 18px 28px;
+  text-align: left;
+  max-width: 500px;
+}
+.problem-stat__number {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.problem-stat__label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.55;
+}
+.problem-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+.problem-card {
+  padding: 24px 32px;
+  border-left: 3px solid var(--accent);
+  background: rgba(13, 31, 23, 0.85);
+  transition: background 0.2s ease;
+}
+.problem-card:hover {
+  background: rgba(28, 61, 46, 0.95);
+}
+.problem-card__name {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border: 1px solid var(--border);
-  border-radius: 50px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 6px;
 }
-.chip:hover {
-  background-color: var(--primary);
-  color: var(--bg-alt);
-  border-color: var(--primary);
-}
-.chip img {
+.problem-card__name img {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
+  filter: invert(62%) sepia(58%) saturate(434%) hue-rotate(359deg)
+    brightness(89%) contrast(86%);
+}
+.problem-card__consequence {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.58);
+  line-height: 1.55;
+  padding-left: 30px;
+}
+.problem-wave {
+  height: 64px;
+  background: var(--bg);
+  clip-path: ellipse(55% 100% at 50% 100%);
+  margin-top: 60px;
 }
 
 /* ==============================
@@ -1070,6 +1168,9 @@ a:hover {
    RESPONSIVE — Tablet
    ============================== */
 @media (min-width: 768px) {
+  .problem-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
